@@ -17,7 +17,7 @@ void main() {
   print(b.length); // 1.0715086071862673e+301
   Iterator iterator = b.iterator;
   if (iterator.moveNext()) {
-    print(iterator.current); // 0
+    print(iterator.current); // 0121
   }
   if (iterator.moveNext()) {
     print(iterator.current); // 1
