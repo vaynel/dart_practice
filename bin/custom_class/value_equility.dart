@@ -3,11 +3,6 @@ class A {
   const A(this.value);
 
   @override
-  String toString() {
-    return "A($value)";
-  }
-
-  @override
   bool operator ==(Object other) {
     return identical(this, other) ||
         other is A && runtimeType == other.runtimeType && value == other.value;
@@ -15,6 +10,11 @@ class A {
 
   @override //hashcode : map, set등의 해시 기반 자료형을 찾을때 ㅅ ㅏ용하는 키값?
   int get hashCode => value.hashCode;
+
+  @override
+  String toString() {
+    return "A($value)";
+  }
 }
 
 void main() {
